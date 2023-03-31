@@ -1,5 +1,6 @@
 /* Estilos para o corpo da página */
 body {
+  overflow: hidden;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -7,22 +8,35 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-color: #191825;
 }
 
 /* Estilos para o cabeçalho da página */
 
 header {
   height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header div {
+  width: 30%;
+  background-color: #865dff;
 }
 
 h1 {
   font-size: 14px;
   text-align: center;
+  color: #e384ff;
 }
 
 h2 {
   font-size: 12px;
   text-align: center;
+  color: #ffa3fd;
 }
 
 /* Estilos para a seção de arte */
@@ -63,14 +77,12 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 30vh;
-  background-color: #eee;
 }
 
 .player {
   width: 80%;
   height: 7vh;
-  background-color: #fff;
-  border-radius: 30px;
+  background-color: #865dff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
@@ -79,15 +91,9 @@ h2 {
 
 .player button {
   display: inline-block;
-  padding: 12px 20px;
   border: none;
   border-radius: 30px;
   background-color: #0f9ada;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
 }
